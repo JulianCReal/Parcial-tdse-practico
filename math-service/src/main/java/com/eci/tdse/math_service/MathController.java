@@ -12,14 +12,32 @@ public class MathController{
     private final AtomicLong counter = new AtomicLong();
 
     @GetMapping("/catalan")
-    public Mathsource catalan(@RequestParam(value = "number") String number) {
-
-        return new Mathsource(counter.incrementAndGet(), catalan(number));
+    public Mathsource catalan(@RequestParam(value = "number") int number) {
+        return new Mathsource(counter.incrementAndGet(), calcular(number));
     }
 
-    private String calcular(int number){
-        ArrayList sec = new ArrayList(number);
+    private ArrayList calcular(int number){
+        ArrayList secuence = new ArrayList<>();
+        int newnumber = 1;
+        while(newnumber < number){
+            int rpta = 0;
+            int factor = fact(newnumber);
+            int faactor1 = fact(newnumber + 1);
+            int numerad = fact(newnumber * 2);
+            int denom = factor * faactor1;
+            rpta = numerad / denom;
+            secuence.add(rpta);
+        }
+        return secuence;
+    }
 
-
+    private int fact(int num){
+        int newnum = 2;
+        int rpta = 1;
+        while (newnum < num){
+            rpta *= newnum;
+            newnum ++;
+        }
+        return rpta;
     }
 }

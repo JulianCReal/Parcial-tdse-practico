@@ -1,4 +1,6 @@
 package com.eci.tdse.math_service;
 
 
-public record Mathsource(int id, String content) { }
+import java.util.ArrayList;
+
+public record Mathsource(long id, ArrayList content) { }
