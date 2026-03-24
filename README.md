@@ -11,7 +11,6 @@ y vemos como se muestra el calculo de los numeros de catalan:
 
 ---
 1. **como ejecutar localmente:**
-2. 
 para poder correr esto de forma local tenemos que entrar al directorio de cada uno de los proyectos y ejecutar 'mvn clean install' para que se 
 instalen todos los paquetes del pom correctamente y luego para correr los projectos usaremos mvn 'spring-boot:run'
 y con esto tenndremos los proyectos corriendo, para despues abrir 'localhost:8087' que es el perteneciente a el proxy-service y de ahi hacer los calculos correspondientes
