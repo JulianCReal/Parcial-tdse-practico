@@ -12,7 +12,8 @@ Funcionamiento:
 3. vemos como se muestra el calculo de los numeros de catalan:
 
 ---
-1. **como ejecutar localmente:**
+**como ejecutar localmente:**
+
 para poder correr esto de forma local tenemos que entrar al directorio de cada uno de los proyectos y ejecutar 'mvn clean install' para que se 
 instalen todos los paquetes del pom correctamente y luego para correr los projectos usaremos mvn 'spring-boot:run'
 y con esto tenndremos los proyectos corriendo, para despues abrir 'localhost:8087' que es el perteneciente a el proxy-service y de ahi hacer los calculos correspondientes
@@ -25,6 +26,7 @@ y con esto tenndremos los proyectos corriendo, para despues abrir 'localhost:808
 3. Luego accederemos a la terminal con ssh:
 ![img_4.png](images/img_4.png)
 4. Instalaremos por comando la version de java y maven:
+   - sudo yum install java-17-amazon-corretto-headless
 5. Correremos con la ip nuestro codigo para verificar que si esta funcionando:
 ![img_5.png](images/img_5.png)
 
